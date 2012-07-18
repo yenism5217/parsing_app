@@ -9,6 +9,7 @@ gem 'pg'
 gem 'stanford-core-nlp', '0.3.2', :path => 'vendor/stanford-core-nlp-0.3.2'
 gem 'bind-it', '0.2.0', :path => 'vendor/bind-it-0.2.0'
 gem 'rjb', '1.4.0'
+gem 'capistrano'
 
 # Gems used only for assets and not required
 # in production environments by default.
