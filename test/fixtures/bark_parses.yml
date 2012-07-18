@@ -1,0 +1,45 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  bark_id: 1
+  x_choice: MyText
+  x_hyper0: MyString
+  x_hyper1: MyString
+  x_hyper2plus: MyText
+  x_loc_hyper0: MyString
+  x_loc_hyper1: MyString
+  x_loc_hyper2plus: MyText
+  x_clause: MyText
+  x_pp: MyText
+  y_category: MyText
+  y_hyper0: MyString
+  y_hyper1: MyString
+  y_hyper2plus: MyText
+  y_loc_hyper0: MyString
+  y_loc_hyper1: MyString
+  y_loc_hyper2plus: MyText
+  y_clause: MyText
+  y_pp: MyText
+  z_reason: MyText
+
+two:
+  bark_id: 1
+  x_choice: MyText
+  x_hyper0: MyString
+  x_hyper1: MyString
+  x_hyper2plus: MyText
+  x_loc_hyper0: MyString
+  x_loc_hyper1: MyString
+  x_loc_hyper2plus: MyText
+  x_clause: MyText
+  x_pp: MyText
+  y_category: MyText
+  y_hyper0: MyString
+  y_hyper1: MyString
+  y_hyper2plus: MyText
+  y_loc_hyper0: MyString
+  y_loc_hyper1: MyString
+  y_loc_hyper2plus: MyText
+  y_clause: MyText
+  y_pp: MyText
+  z_reason: MyText

@@ -1,0 +1,97 @@
+<%= form_for(@bark_parse) do |f| %>
+  <% if @bark_parse.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@bark_parse.errors.count, "error") %> prohibited this bark_parse from being saved:</h2>
+
+      <ul>
+      <% @bark_parse.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :bark_id %><br />
+    <%= f.number_field :bark_id %>
+  </div>
+  <div class="field">
+    <%= f.label :x_choice %><br />
+    <%= f.text_area :x_choice %>
+  </div>
+  <div class="field">
+    <%= f.label :x_hyper0 %><br />
+    <%= f.text_field :x_hyper0 %>
+  </div>
+  <div class="field">
+    <%= f.label :x_hyper1 %><br />
+    <%= f.text_field :x_hyper1 %>
+  </div>
+  <div class="field">
+    <%= f.label :x_hyper2plus %><br />
+    <%= f.text_area :x_hyper2plus %>
+  </div>
+  <div class="field">
+    <%= f.label :x_loc_hyper0 %><br />
+    <%= f.text_field :x_loc_hyper0 %>
+  </div>
+  <div class="field">
+    <%= f.label :x_loc_hyper1 %><br />
+    <%= f.text_field :x_loc_hyper1 %>
+  </div>
+  <div class="field">
+    <%= f.label :x_loc_hyper2plus %><br />
+    <%= f.text_area :x_loc_hyper2plus %>
+  </div>
+  <div class="field">
+    <%= f.label :x_clause %><br />
+    <%= f.text_area :x_clause %>
+  </div>
+  <div class="field">
+    <%= f.label :x_pp %><br />
+    <%= f.text_area :x_pp %>
+  </div>
+  <div class="field">
+    <%= f.label :y_category %><br />
+    <%= f.text_area :y_category %>
+  </div>
+  <div class="field">
+    <%= f.label :y_hyper0 %><br />
+    <%= f.text_field :y_hyper0 %>
+  </div>
+  <div class="field">
+    <%= f.label :y_hyper1 %><br />
+    <%= f.text_field :y_hyper1 %>
+  </div>
+  <div class="field">
+    <%= f.label :y_hyper2plus %><br />
+    <%= f.text_area :y_hyper2plus %>
+  </div>
+  <div class="field">
+    <%= f.label :y_loc_hyper0 %><br />
+    <%= f.text_field :y_loc_hyper0 %>
+  </div>
+  <div class="field">
+    <%= f.label :y_loc_hyper1 %><br />
+    <%= f.text_field :y_loc_hyper1 %>
+  </div>
+  <div class="field">
+    <%= f.label :y_loc_hyper2plus %><br />
+    <%= f.text_area :y_loc_hyper2plus %>
+  </div>
+  <div class="field">
+    <%= f.label :y_clause %><br />
+    <%= f.text_area :y_clause %>
+  </div>
+  <div class="field">
+    <%= f.label :y_pp %><br />
+    <%= f.text_area :y_pp %>
+  </div>
+  <div class="field">
+    <%= f.label :z_reason %><br />
+    <%= f.text_area :z_reason %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

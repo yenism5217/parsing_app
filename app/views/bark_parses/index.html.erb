@@ -1,0 +1,61 @@
+<h1>Listing bark_parses</h1>
+
+<table>
+  <tr>
+    <th>Bark</th>
+    <th>X choice</th>
+    <th>X hyper0</th>
+    <th>X hyper1</th>
+    <th>X hyper2plus</th>
+    <th>X loc hyper0</th>
+    <th>X loc hyper1</th>
+    <th>X loc hyper2plus</th>
+    <th>X clause</th>
+    <th>X pp</th>
+    <th>Y category</th>
+    <th>Y hyper0</th>
+    <th>Y hyper1</th>
+    <th>Y hyper2plus</th>
+    <th>Y loc hyper0</th>
+    <th>Y loc hyper1</th>
+    <th>Y loc hyper2plus</th>
+    <th>Y clause</th>
+    <th>Y pp</th>
+    <th>Z reason</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @bark_parses.each do |bark_parse| %>
+  <tr>
+    <td><%= bark_parse.bark_id %></td>
+    <td><%= bark_parse.x_choice %></td>
+    <td><%= bark_parse.x_hyper0 %></td>
+    <td><%= bark_parse.x_hyper1 %></td>
+    <td><%= bark_parse.x_hyper2plus %></td>
+    <td><%= bark_parse.x_loc_hyper0 %></td>
+    <td><%= bark_parse.x_loc_hyper1 %></td>
+    <td><%= bark_parse.x_loc_hyper2plus %></td>
+    <td><%= bark_parse.x_clause %></td>
+    <td><%= bark_parse.x_pp %></td>
+    <td><%= bark_parse.y_category %></td>
+    <td><%= bark_parse.y_hyper0 %></td>
+    <td><%= bark_parse.y_hyper1 %></td>
+    <td><%= bark_parse.y_hyper2plus %></td>
+    <td><%= bark_parse.y_loc_hyper0 %></td>
+    <td><%= bark_parse.y_loc_hyper1 %></td>
+    <td><%= bark_parse.y_loc_hyper2plus %></td>
+    <td><%= bark_parse.y_clause %></td>
+    <td><%= bark_parse.y_pp %></td>
+    <td><%= bark_parse.z_reason %></td>
+    <td><%= link_to 'Show', bark_parse %></td>
+    <td><%= link_to 'Edit', edit_bark_parse_path(bark_parse) %></td>
+    <td><%= link_to 'Destroy', bark_parse, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Bark parse', new_bark_parse_path %>
